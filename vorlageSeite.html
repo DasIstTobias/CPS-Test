@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CPS-Test</title>
+    <style>
+      #clickarea {
+        width: 300pt;
+        height: 200pt;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CPS-Test</h1>
+    <label for="duration">Zeit in Sekunden:
+      <select name="duration" id="duration">
+        <option>--Bitte eine Option Wählen--</option>
+        <option>1</option>
+        <option>2</option>
+        <option>5</option>
+        <option>10</option>
+        <option>20</option>
+        <option>30</option>
+        <option>60</option>
+      </select>
+    </label>
+    <div id="content">
+        Zeit: <span id="timer"></span> |
+        Klicks: <span id="score"></span> |
+        Klicks/s: <span id="clicks"></span>
+    </div>
+    <div id="clickarea">
+      <button id="start">Start</button>
+    </div>
+    <script src="cpsTest.js"></script>
+  </body>
+</html>
